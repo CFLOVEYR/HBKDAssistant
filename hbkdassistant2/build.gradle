@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.tofirst.study.hbkdassistant"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.0.6"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'org.xutils:xutils:3.2.6'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'de.hdodenhof:circleimageview:2.0.0' //圆形图片处理器
+    //bmob-sdk ：Bmob的android sdk包
+    compile 'cn.bmob.android:bmob-sdk:3.4.5'
+    //bmob-push：Bmob的推送包
+    compile 'cn.bmob.android:bmob-push:0.6'
+
+    compile project(':PagerSlidingTabStripLibrary')
+    compile project(':ViewPagerIndicatorLibaray')
+
+}

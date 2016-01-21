@@ -1,0 +1,5 @@
+include ':app', ':hbkdassistant2', 'SlidingMenuLibrary', ':sample', ':PagerSlidingTabStripLibrary'
+include ':ViewPagerIndicatorLibaray',':slideSwitch',":SettingDemo",":imagecut"
+
+include ':ViewPagerIndicatorSample'
+include ':SlidingMenuSample'

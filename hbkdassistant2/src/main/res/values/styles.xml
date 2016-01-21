@@ -1,0 +1,170 @@
+<resources>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- translucent system bars -->
+        <!--        <item name="android:windowTranslucentStatus">true</item>
+                <item name="android:windowTranslucentNavigation">true</item>-->
+        <!--选中状态icon的颜色和字体颜色-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="colorAccent">@android:color/holo_green_light</item>
+        <!--正常状态下字体颜色和icon颜色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+    </style>
+
+
+    <style name="MyActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MyOverflowButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@android:drawable/ic_menu_view</item>
+    </style>
+
+    <style name="MyToolbarTextStyle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity" parent="AppBaseTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Base MyNoTitle theme. -->
+    <style name="NoTitleTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--主页底部的样式-->
+    <style name="BottomTagStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/bottom_tag_text_selector</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 最外层样式 -->
+    <style name="wrap_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">1px</item>
+        <item name="android:background">@drawable/bg_layout_shape</item>
+    </style>
+
+    <!-- 共用层样式 -->
+    <style name="base_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!--layout样式-->
+    <!-- textview样式 -->
+    <style name="usertext">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/text_clo</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <!-- 文本右边箭头样式 -->
+    <style name="img_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/setting_arrow</item>
+
+    </style>
+
+
+    <!-- view分割线样式 -->
+    <style name="bg_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/border_clo</item>
+    </style>
+
+    <!--控件样式-->
+    <!-- 上圆角样式 -->
+    <style name="top_layout" parent="base_layout">
+        <item name="android:background">@drawable/top_layout_selector</item>
+    </style>
+
+
+    <!--无圆角样式  -->
+    <style name="mid_layout" parent="base_layout">
+        <item name="android:background">@drawable/mid_layout_selector</item>
+    </style>
+
+    <!-- 下圆角样式 -->
+    <style name="bottom_layout" parent="base_layout">
+        <item name="android:background">@drawable/bottom_layout_selector</item>
+    </style>
+
+    <!-- 全圆角样式 -->
+    <style name="single_layout" parent="base_layout">
+        <item name="android:background">@drawable/single_layout_selector</item>
+    </style>
+
+    <!--点击样式和默认样式-->
+
+    <style name="ProgressBarBig">
+        <item name="android:indeterminateDrawable">@drawable/progress_big</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+    </style>
+
+
+    <!--    引导器的样式-->
+    <style name="Theme.PageIndicatorDefaults.MyStyle" parent="AppTheme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+
+
+    <!--用户信息左标题样式-->
+    <style name="UserInfoTitleStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--用户信息信息样式-->
+    <style name="UserInfoContentStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

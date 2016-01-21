@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res"/><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\build\generated\res\rs\debug"/><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\debug\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res"><file name="bg_layout_shape" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\bg_layout_shape.xml" qualifiers="hdpi-v4" type="drawable"/><file name="bottom_layout_selector" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\bottom_layout_selector.xml" qualifiers="hdpi-v4" type="drawable"/><file name="bottom_select" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\bottom_select.xml" qualifiers="hdpi-v4" type="drawable"/><file name="bottom_unselect" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\bottom_unselect.xml" qualifiers="hdpi-v4" type="drawable"/><file name="mid_layout_selector" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\mid_layout_selector.xml" qualifiers="hdpi-v4" type="drawable"/><file name="setting_arrow" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\setting_arrow.png" qualifiers="hdpi-v4" type="drawable"/><file name="single_layout_selector" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\single_layout_selector.xml" qualifiers="hdpi-v4" type="drawable"/><file name="single_select" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\single_select.xml" qualifiers="hdpi-v4" type="drawable"/><file name="single_unselect" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\single_unselect.xml" qualifiers="hdpi-v4" type="drawable"/><file name="top_layout_selector" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\top_layout_selector.xml" qualifiers="hdpi-v4" type="drawable"/><file name="top_select" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\top_select.xml" qualifiers="hdpi-v4" type="drawable"/><file name="top_unselect" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-hdpi\top_unselect.xml" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_main" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="fragment_main" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\layout\fragment_main.xml" qualifiers="" type="layout"/><file name="main" path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\menu\main.xml" qualifiers="" type="menu"/><file path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\values\color.xml" qualifiers=""><color name="blue">#419DE4</color><color name="text_clo">#333</color><color name="border_clo">#ccc</color><color name="white">#fff</color></file><file path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\values\strings.xml" qualifiers=""><string name="hello_world">Hello world!</string><string name="action_settings">Settings</string><string name="app_name">布局实例</string></file><file path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\values\styles.xml" qualifiers=""><style name="top_layout" parent="base_layout">		
+        <item name="android:background">@drawable/top_layout_selector</item>
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><style name="base_layout">
+        <item name="android:orientation">horizontal</item> 
+		 <item name="android:layout_width">match_parent</item>       
+		 <item name="android:layout_height">wrap_content</item>
+		 <item name="android:paddingTop">16dp</item>
+		 <item name="android:paddingBottom">16dp</item>
+		 <item name="android:paddingLeft">12dp</item>
+		 <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>   
+         <item name="android:focusable">true</item>  
+        <item name="android:clickable">true</item>       
+    </style><style name="mid_layout" parent="base_layout">
+         <item name="android:background">@drawable/mid_layout_selector</item>
+    </style><style name="single_layout" parent="base_layout">
+        <item name="android:background">@drawable/single_layout_selector</item>
+    </style><style name="bg_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/border_clo</item>
+    </style><style name="wrap_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+		<item name="android:padding">1px</item>
+        <item name="android:background">@drawable/bg_layout_shape</item>
+              
+    </style><style name="img_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/setting_arrow</item>
+        
+    </style><style name="AppBaseTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style><style name="bottom_layout" parent="base_layout">
+          <item name="android:background">@drawable/bottom_layout_selector</item>
+    </style><style name="usertext">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/text_clo</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style></file><file path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file><file path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file></source><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\build\generated\res\rs\debug"/><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="E:\WorkSpace\Studio\HBKDAssistant\SettingDemo\src\debug\res"/></dataSet><mergedItems/></merger>

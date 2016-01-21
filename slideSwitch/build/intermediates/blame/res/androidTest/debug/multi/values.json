@@ -1,0 +1,68 @@
+[
+    {
+        "outputFile": "E:\\WorkSpace\\Studio\\HBKDAssistant\\slideSwitch\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 282,
+                    "endColumn": 48,
+                    "endOffset": 326
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\slideSwitch\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 282,
+                        "endColumn": 48,
+                        "endOffset": 326
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 331,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 617
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\slideSwitch\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 331,
+                        "endLine": 10,
+                        "endColumn": 12,
+                        "endOffset": 617
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 622,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 777
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\slideSwitch\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 622,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 777
+                    }
+                }
+            }
+        ]
+    }
+]

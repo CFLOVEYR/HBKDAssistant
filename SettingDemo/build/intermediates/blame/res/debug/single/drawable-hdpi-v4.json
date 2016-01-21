@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bottom_select.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\bottom_select.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bottom_layout_selector.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\bottom_layout_selector.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\single_layout_selector.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\single_layout_selector.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\single_select.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\single_select.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_select.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\top_select.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_unselect.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\top_unselect.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\setting_arrow.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\setting_arrow.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\top_layout_selector.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\top_layout_selector.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\single_unselect.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\single_unselect.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\mid_layout_selector.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\mid_layout_selector.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_layout_shape.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\bg_layout_shape.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bottom_unselect.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\drawable-hdpi\\bottom_unselect.xml"
+    }
+]

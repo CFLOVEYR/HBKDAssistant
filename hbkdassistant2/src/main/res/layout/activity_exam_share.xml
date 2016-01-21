@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".acitvity.main.ExamShareActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!--自动滚动的轮播条-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:singleLine="true"
+        android:text="王尼玛同学不惜辛苦,为大家分享了高数考试经验!!   王尼玛同学不惜辛苦,为大家分享了高数考试经验!!   王尼玛同学不惜辛苦,为大家分享了高数考试经验!!   王尼玛同学不惜辛苦,为大家分享了高数考试经验!!"
+        android:textColor="@color/black" />
+    <!--<com.astuetz.PagerSlidingTabStrip-->
+    <!--xmlns:itheima="http://schemas.android.com/apk/res/org.itheima56.googleplay"-->
+    <!--android:id="@+id/main_tabs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dip"-->
+    <!--android:textSize="18dp"-->
+    <!--itheima:pstsIndicatorColor="@color/tab_indicator_selected"-->
+    <!--itheima:pstsIndicatorHeight="5dp" />-->
+    <com.astuetz.PagerSlidingTabStrip
+        xmlns:hbkd="http://schemas.android.com/apk/res/com.tofirst.study.hbkdassistant"
+        android:id="@+id/indicator_exam_share"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:textSize="15dp"
+        hbkd:pstsIndicatorColor="@color/tab_indicator"
+        hbkd:pstsIndicatorHeight="5dp" />
+    <!--<com.viewpagerindicator.TabPageIndicator-->
+    <!--android:id="@+id/indicator_exam_share"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_exam_share"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

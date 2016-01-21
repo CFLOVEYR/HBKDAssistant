@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@mipmap/guide3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            //圆形图片
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_circle_mine_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/pic_default"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#00000000"/>
+            <TextView
+                android:id="@+id/tv_mine_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王尼玛"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_mine_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="等级: 圣斗士"
+                android:textColor="@color/red"
+                android:textSize="15sp"/>
+            <ProgressBar
+                android:id="@+id/pb_mine_grade"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:max="100"
+                android:progress="30"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout style="@style/wrap_layout">
+        <!-- 上圆角   第一个条目-->
+        <!--个人信息-->
+        <LinearLayout
+            android:id="@+id/ll_mine_personal_info"
+            style="@style/top_layout"
+            android:clickable="true">
+
+            <TextView
+                style="@style/usertext"
+                android:text="个人信息" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View style="@style/bg_line" />
+        <!-- 无圆角-->
+        <!--我的收藏-->
+        <LinearLayout
+            android:id="@+id/ll_mine_personal_collect"
+            style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="我的分享" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+        <!-- 下圆角-->
+        <!--我的更新-->
+        <LinearLayout
+            android:id="@+id/ll_mine_personal_remark"
+            style="@style/bottom_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="我的评论" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <!--关于作者-->
+        <LinearLayout
+            android:id="@+id/ll_mine_setting"
+            style="@style/single_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="设置中心" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\exploded-aar\\HBKDAssistant\\ViewPagerIndicatorLibaray\\unspecified\\res\\drawable\\vpi__tab_indicator.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\drawable\\perm_group_location.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\drawable\\perm_group_location.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\drawable\\perm_group_calendar.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\drawable\\perm_group_calendar.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\drawable\\vpi__tab_text_indicator.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\exploded-aar\\HBKDAssistant\\ViewPagerIndicatorLibaray\\unspecified\\res\\drawable\\vpi__tab_text_indicator.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\drawable\\perm_group_device_alarms.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\drawable\\perm_group_device_alarms.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\drawable\\perm_group_camera.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\drawable\\perm_group_camera.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_tab_indicator.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\drawable\\custom_tab_indicator.xml"
+    }
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hbkd="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:icon="@mipmap/ic_action_search"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="搜索"-->
+        <!--hbkd:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/action_mode"
+        android:title="夜间模式" />
+    <item
+        android:id="@+id/action_setting"
+        android:title="设置中心" />
+</menu>

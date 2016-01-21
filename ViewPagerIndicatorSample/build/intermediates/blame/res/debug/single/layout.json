@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\themed_circles.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\themed_circles.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_circles.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_circles.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_tabs.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_tabs.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_titles.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_titles.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_circles_vertical.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_circles_vertical.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_underlines.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_underlines.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\themed_titles.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\themed_titles.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\themed_underlines.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\themed_underlines.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_titles_bottom.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_titles_bottom.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_icons.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_icons.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\simple_lines.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\simple_lines.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\build\\intermediates\\res\\merged\\debug\\layout\\themed_lines.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorSample\\src\\main\\res\\layout\\themed_lines.xml"
+    }
+]

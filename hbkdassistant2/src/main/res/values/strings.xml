@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">河北科技大学助手</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <!--侧滑菜单的状态-->
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!--新闻展示页面-->
+    <string-array name="tab_news">
+        <item>新闻公告</item>
+        <item>管理文件</item>
+        <item>师资队伍</item>
+    </string-array>
+
+    <!--考试资料分享页面-->
+    <string-array name="exam_share">
+        <item>考试经验查询</item>
+        <item>分享考试经验</item>
+        <item>寻求考试经验</item>
+    </string-array>
+    <string name="load_more">加载中...</string>
+    <string name="load_error">加载失败,点击重试</string>
+    <string name="about_app">这个APP是自己空闲时间做的,图片还有创意方面没有那么好!!大家如果感觉哪里不好的,可以提意见哟!!
+                或者对某个功能有想法的,可以发邮件或者加群来完善这个APP</string>
+    <string name="home">首页</string>
+    <string name="news">新闻版块</string>
+    <string name="study">学习版块</string>
+    <string name="mine">个人信息</string>
+
+</resources>

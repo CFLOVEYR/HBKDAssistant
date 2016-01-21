@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tofirst.study.hbkdassistant">
+
+    <!-- Bmob需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="BMOB_CHANNEL"
+            android:value="Channel ID" />
+        <!-- 闪屏页面 -->
+        <activity
+            android:name=".acitvity.main.SplashActivity"
+            android:theme="@style/NoTitleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 新手引导页面 -->
+        <activity
+            android:name=".acitvity.main.GuideActivity"
+            android:theme="@style/NoTitleTheme" />
+        <!-- 主页面 -->
+        <activity android:name=".acitvity.main.MainActivity" />
+        <!-- 展示网页的数据 -->
+        <!-- 登录的界面 -->
+        <activity
+            android:name=".acitvity.login.LoginActivity"
+            android:parentActivityName=".acitvity.main.MainActivity" />
+        <!-- 注册的页面 -->
+        <activity
+            android:name=".acitvity.login.RegisterActivity"
+            android:parentActivityName=".acitvity.login.LoginActivity" />
+
+        <!-- Activity的基类 -->
+        <activity android:name=".acitvity.main.BaseActivity" />
+        <!-- 设置页面 -->
+        <activity
+            android:name=".acitvity.main.SettingActivity"
+            android:parentActivityName=".acitvity.main.MainActivity" />
+        <!-- 考试资料分享的界面 -->
+        <activity
+            android:name=".acitvity.main.ExamShareActivity"
+            android:parentActivityName=".acitvity.main.MainActivity"
+            android:theme="@style/Theme.PageIndicatorDefaults.MyStyle" />
+        <!-- 用户信息的类 -->
+        <activity
+            android:name=".acitvity.login.UserInfoActivity"
+            android:parentActivityName=".acitvity.main.MainActivity" />
+        <!-- 找回密码的类 -->
+        <activity
+            android:name=".acitvity.login.PickUpPSDActivity"
+            android:parentActivityName=".acitvity.login.LoginActivity" />
+        <!-- 更改用户信息的类 -->
+        <activity
+            android:name=".acitvity.login.UpdateUserInfoActivity"
+            android:parentActivityName=".acitvity.login.UserInfoActivity" />
+        <!-- 反馈信息 -->
+        <activity
+            android:name=".acitvity.feedback.FeedActivity"
+            android:parentActivityName=".acitvity.main.MainActivity" />
+        <!-- 展示反馈信息 -->
+        <activity
+            android:name=".acitvity.feedback.ShowFeedBackActivity"
+            android:parentActivityName=".acitvity.feedback.FeedActivity" />
+        <!-- 详细展示反馈信息 -->
+        <activity
+            android:name=".acitvity.feedback.ShowFeedBackDetailActivity"
+            android:parentActivityName=".acitvity.feedback.ShowFeedBackActivity" />
+        <!-- 自动更新的对话界面 -->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity android:name=".acitvity.login.UserPicCutActivity"></activity>
+        <!--新闻第一页-->
+        <activity
+            android:name=".acitvity.main.LatestContentActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <!--新闻后几页-->
+        <activity
+            android:name=".acitvity.main.NewsContentActivity"
+            android:theme="@style/AppTheme.TransparentActivity"></activity>
+    </application>
+
+</manifest>

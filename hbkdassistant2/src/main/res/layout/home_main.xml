@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <!--图片滚动展示栏  请求父控件不要拦截自己的ViewPager-->
+    <com.tofirst.study.hbkdassistant.view.NoHorizontalNesDetailViewPager
+        android:id="@+id/vp_home_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator_home_main"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+</RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#77AB6F"
+                android:text="@string/about_app"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/tv_home_main_faceback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#67AB6F"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="不要拦着我...我要提意见"
+                android:textColor="@color/black" />
+
+
+</LinearLayout>

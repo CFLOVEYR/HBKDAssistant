@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="balck">#000000</color>
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="blue">#419DE4</color>
+    <color name="green">#4ABF6C</color>
+
+    <color name="gray">#BEBEBE</color>
+    <color name="light_toolbar">@android:color/holo_blue_dark</color>
+    <color name="dark_toolbar">@android:color/black</color>
+    <color name="light_news_item">#FFF0F0F0</color>
+    <color name="dark_news_item">#DD000000</color>
+    <color name="light_news_topic">#ff666666</color>
+    <color name="dark_news_topic">#CCFFFFFF</color>
+    <color name="dark_selector_drawable">#FF333333</color>
+    <color name="light_menu_header">@android:color/holo_blue_dark</color>
+    <color name="dark_menu_header">@android:color/black</color>
+    <color name="light_menu_header_tv">@android:color/white</color>
+    <color name="dark_menu_header_tv">#CCFFFFFF</color>
+    <color name="light_menu_index_background">#FFF0F0F0</color>
+    <color name="dark_menu_index_background">#FF111111</color>
+    <color name="light_menu_listview_background">@android:color/white</color>
+    <color name="dark_menu_listview_background">#FF222222</color>
+    <color name="light_menu_listview_textcolor">#FF000000</color>
+    <color name="dark_menu_listview_textcolor">@android:color/darker_gray</color>
+    <color name="clicked_tv_textcolor">@android:color/darker_gray</color>
+
+    <color name="tab_indicator">#6666FF</color>
+    <color name="tab_text_selected">#6666FF</color>
+    <color name="tab_text_normal">#333333</color>
+    <color name="item_divider">#ffd7d7d7</color>
+</resources>

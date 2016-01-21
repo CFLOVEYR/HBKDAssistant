@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\row.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\row.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\list.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\list.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\list_grid.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\list_grid.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\properties.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\properties.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\exploded-aar\\HBKDAssistant\\SlidingMenuLibrary\\unspecified\\res\\layout\\slidingmenumain.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\menu_frame.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\menu_frame.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\menu_frame_two.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\menu_frame_two.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\responsive_content_frame.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\responsive_content_frame.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\content_frame.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\content_frame.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\github_button.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\github_button.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\pager.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\pager.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\menu.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\menu.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\layout\\grid_item.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\layout\\grid_item.xml"
+    }
+]

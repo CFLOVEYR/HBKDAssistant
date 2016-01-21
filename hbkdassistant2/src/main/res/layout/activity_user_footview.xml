@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:slideswitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <!--用户头像 圆角-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/pic_default"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/UserInfoTitleStyle"
+                        android:text="用户名:" />
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        style="@style/UserInfoContentStyle" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/UserInfoTitleStyle"
+                    android:text="年级:" />
+
+                <TextView
+                    android:id="@+id/tv_user_grade"
+                    style="@style/UserInfoContentStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/UserInfoTitleStyle"
+                    android:text="等级:" />
+
+                <TextView
+                    android:id="@+id/tv_user_level"
+                    style="@style/UserInfoContentStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/UserInfoTitleStyle"
+                    android:text="自我描述:" />
+
+                <TextView
+                    android:id="@+id/tv_user_description"
+                    style="@style/UserInfoContentStyle" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/UserInfoTitleStyle"
+                    android:text="手机号码:" />
+
+                <TextView
+                    android:id="@+id/tv_user_pnumber"
+                    style="@style/UserInfoContentStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/UserInfoTitleStyle"
+                    android:text="邮箱:" />
+
+                <TextView
+                    android:id="@+id/tv_user_email"
+                    style="@style/UserInfoContentStyle" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/UserInfoTitleStyle"
+                    android:layout_centerVertical="true"
+                    android:text="手机绑定:" />
+
+                <com.tofirst.study.hbkdassistant.view.SlideSwitch
+                    android:id="@+id/tb_user_pnumber_bd"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    slideswitch:isOpen="true"
+                    slideswitch:shape="circle"
+                    slideswitch:themeColor="#ff73aa00" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/UserInfoTitleStyle"
+                    android:layout_centerVertical="true"
+                    android:text="邮箱绑定:" />
+
+                <com.tofirst.study.hbkdassistant.view.SlideSwitch
+                    android:id="@+id/tb_user_email_bd"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    slideswitch:isOpen="true"
+                    slideswitch:shape="circle"
+                    slideswitch:themeColor="#ff73aa00" />
+            </RelativeLayout>
+</LinearLayout>

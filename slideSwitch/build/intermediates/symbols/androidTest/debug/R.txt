@@ -1,0 +1,12 @@
+int attr isOpen 0x7f010001
+int attr shape 0x7f010002
+int attr themeColor 0x7f010000
+int id circle 0x7f030001
+int id rect 0x7f030000
+int string app_name 0x7f040000
+int style AppBaseTheme 0x7f020000
+int style AppTheme 0x7f020001
+int[] styleable slideswitch { 0x7f010000, 0x7f010001, 0x7f010002 }
+int styleable slideswitch_isOpen 1
+int styleable slideswitch_shape 2
+int styleable slideswitch_themeColor 0

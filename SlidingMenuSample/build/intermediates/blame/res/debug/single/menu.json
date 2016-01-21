@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\menu\\example_list.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\menu\\example_list.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\menu\\main.xml"
+    }
+]

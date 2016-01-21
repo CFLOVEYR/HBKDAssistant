@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tabs_diagonal.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable\\background_tabs_diagonal.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tabs.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable\\background_tabs.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tab.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\exploded-aar\\HBKDAssistant\\PagerSlidingTabStripLibrary\\unspecified\\res\\drawable\\background_tab.xml"
+    }
+]

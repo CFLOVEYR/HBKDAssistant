@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\background_card.9.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\background_card.9.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tabs_pattern.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\tabs_pattern.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\tabs_pattern_diagonal.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\tabs_pattern_diagonal.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher_actionbar.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\ic_launcher_actionbar.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher_gplus.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\ic_launcher_gplus.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher_gmaps.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\ic_launcher_gmaps.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher_chrome.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\ic_launcher_chrome.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher_gmail.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\ic_launcher_gmail.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_action_user.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\ic_action_user.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\contact.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\contact.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\actionbar_bottom.9.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xhdpi\\actionbar_bottom.9.png"
+    }
+]

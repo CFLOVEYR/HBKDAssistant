@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tofirst.study.hbkdassistant.widget.PagerTab
+        android:id="@+id/news_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="@drawable/bg_tab" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/news_tabs"
+        tools:context=".activity.MainActivity" />
+</RelativeLayout>

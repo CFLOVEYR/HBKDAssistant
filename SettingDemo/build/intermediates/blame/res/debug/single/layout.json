@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SettingDemo\\src\\main\\res\\layout\\fragment_main.xml"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\drawable-mdpi\\indicator.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_github.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\SlidingMenuSample\\src\\main\\res\\drawable-mdpi\\ic_action_github.png"
+    }
+]

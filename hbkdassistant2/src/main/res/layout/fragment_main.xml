@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F3F6"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/wrap_layout">
+                <!-- 上圆角   第一个条目-->
+                <!--个人信息-->
+                <LinearLayout
+                    android:id="@+id/ll_personal_info"
+                    style="@style/top_layout"
+                    android:clickable="true">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="个人信息" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+                <!-- 无圆角-->
+                <!--我的收藏-->
+                <LinearLayout
+                    android:id="@+id/ll_personal_collect"
+                    style="@style/mid_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="我的收藏" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+                <!--我的更新-->
+                <LinearLayout
+                    android:id="@+id/ll_personal_remark"
+                    style="@style/bottom_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="我的评论" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/wrap_layout">
+                <!-- 上圆角-->
+                <!--自动更新-->
+                <LinearLayout
+                    android:id="@+id/ll_auto_setting"
+                    style="@style/top_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="自动更新设置" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+                <!-- 无圆角-->
+                <!--图片加载-->
+                <LinearLayout
+                    android:id="@+id/ll_photo_setting"
+                    style="@style/mid_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="图片加载设置" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+                <!--消息提醒-->
+                <LinearLayout
+                    android:id="@+id/ll_message_setting"
+                    style="@style/bottom_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="消息提醒设置" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 全圆角-->
+            <!--应用推荐-->
+            <LinearLayout style="@style/wrap_layout">
+
+                <LinearLayout
+                    android:id="@+id/ll_app_recommond"
+                    style="@style/single_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="应用推荐" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/wrap_layout">
+                <!-- 上圆角-->
+                <!--意见反馈-->
+                <LinearLayout
+                    android:id="@+id/ll_feedback"
+                    style="@style/top_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="意见反馈" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <!-- 分割线 -->
+                <View style="@style/bg_line" />
+                <!-- 无圆角-->
+                <!--检查版本-->
+                <LinearLayout
+                    android:id="@+id/ll_check_version"
+                    style="@style/mid_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="检查版本更新" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+                <View style="@style/bg_line" />
+                <!-- 下圆角-->
+                <!--分享朋友-->
+                <LinearLayout
+                    android:id="@+id/ll_share_friend"
+                    style="@style/bottom_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="分享给朋友" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- 全圆角-->
+            <LinearLayout style="@style/wrap_layout">
+                <!--关于作者-->
+                <LinearLayout
+                    android:id="@+id/ll_about_author"
+                    style="@style/single_layout">
+
+                    <TextView
+                        style="@style/usertext"
+                        android:text="关于作者" />
+
+                    <ImageView style="@style/img_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_setting_sign_out"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_image_sign_selector"
+                android:gravity="center"
+                android:text="注销登录"
+                android:textColor="#000"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

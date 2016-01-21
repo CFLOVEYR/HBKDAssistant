@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher_actionbar.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xxhdpi\\ic_launcher_actionbar.png"
+    },
+    {
+        "merged": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "E:\\WorkSpace\\Studio\\HBKDAssistant\\sample\\res\\drawable-xxhdpi\\ic_launcher.png"
+    }
+]

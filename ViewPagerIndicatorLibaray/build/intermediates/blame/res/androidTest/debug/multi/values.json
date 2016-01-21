@@ -1,0 +1,986 @@
+[
+    {
+        "outputFile": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 44,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 47,
+                    "endOffset": 143
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 100,
+                        "endColumn": 47,
+                        "endOffset": 143
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 148,
+                    "endColumn": 49,
+                    "endOffset": 193
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 148,
+                        "endColumn": 49,
+                        "endOffset": 193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 198,
+                    "endColumn": 49,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 198,
+                        "endColumn": 49,
+                        "endOffset": 243
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 62,
+                    "endOffset": 306
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 62,
+                        "endOffset": 306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 311,
+                    "endColumn": 59,
+                    "endOffset": 366
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 311,
+                        "endColumn": 59,
+                        "endOffset": 366
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 371,
+                    "endColumn": 60,
+                    "endOffset": 427
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 371,
+                        "endColumn": 60,
+                        "endOffset": 427
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 432,
+                    "endColumn": 66,
+                    "endOffset": 494
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 432,
+                        "endColumn": 66,
+                        "endOffset": 494
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 499,
+                    "endColumn": 62,
+                    "endOffset": 557
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 499,
+                        "endColumn": 62,
+                        "endOffset": 557
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 562,
+                    "endColumn": 37,
+                    "endOffset": 595
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 562,
+                        "endColumn": 37,
+                        "endOffset": 595
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 600,
+                    "endColumn": 71,
+                    "endOffset": 667
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 600,
+                        "endColumn": 71,
+                        "endOffset": 667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 672,
+                    "endColumn": 71,
+                    "endOffset": 739
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 672,
+                        "endColumn": 71,
+                        "endOffset": 739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 744,
+                    "endColumn": 73,
+                    "endOffset": 813
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 744,
+                        "endColumn": 73,
+                        "endOffset": 813
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 818,
+                    "endColumn": 73,
+                    "endOffset": 887
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 818,
+                        "endColumn": 73,
+                        "endOffset": 887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 892,
+                    "endColumn": 75,
+                    "endOffset": 963
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 892,
+                        "endColumn": 75,
+                        "endOffset": 963
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 968,
+                    "endColumn": 72,
+                    "endOffset": 1036
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 968,
+                        "endColumn": 72,
+                        "endOffset": 1036
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1041,
+                    "endColumn": 74,
+                    "endOffset": 1111
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1041,
+                        "endColumn": 74,
+                        "endOffset": 1111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1116,
+                    "endColumn": 70,
+                    "endOffset": 1182
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1116,
+                        "endColumn": 70,
+                        "endOffset": 1182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1187,
+                    "endColumn": 78,
+                    "endOffset": 1261
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1187,
+                        "endColumn": 78,
+                        "endOffset": 1261
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1266,
+                    "endColumn": 35,
+                    "endOffset": 1297
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1266,
+                        "endColumn": 35,
+                        "endOffset": 1297
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1302,
+                    "endColumn": 61,
+                    "endOffset": 1359
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1302,
+                        "endColumn": 61,
+                        "endOffset": 1359
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1364,
+                    "endColumn": 62,
+                    "endOffset": 1422
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1364,
+                        "endColumn": 62,
+                        "endOffset": 1422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1427,
+                    "endColumn": 77,
+                    "endOffset": 1500
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1427,
+                        "endColumn": 77,
+                        "endOffset": 1500
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1505,
+                    "endColumn": 78,
+                    "endOffset": 1579
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1505,
+                        "endColumn": 78,
+                        "endOffset": 1579
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1584,
+                    "endColumn": 92,
+                    "endOffset": 1672
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1584,
+                        "endColumn": 92,
+                        "endOffset": 1672
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1677,
+                    "endColumn": 92,
+                    "endOffset": 1765
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1677,
+                        "endColumn": 92,
+                        "endOffset": 1765
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1770,
+                    "endColumn": 107,
+                    "endOffset": 1873
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1770,
+                        "endColumn": 107,
+                        "endOffset": 1873
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1878,
+                    "endColumn": 107,
+                    "endOffset": 1981
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1878,
+                        "endColumn": 107,
+                        "endOffset": 1981
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 4208,
+                    "endColumn": 61,
+                    "endOffset": 4265
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 4208,
+                        "endColumn": 61,
+                        "endOffset": 4265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 4270,
+                    "endColumn": 67,
+                    "endOffset": 4333
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 4270,
+                        "endColumn": 67,
+                        "endOffset": 4333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 4338,
+                    "endColumn": 62,
+                    "endOffset": 4396
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 4338,
+                        "endColumn": 62,
+                        "endOffset": 4396
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 4401,
+                    "endColumn": 64,
+                    "endOffset": 4461
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 4401,
+                        "endColumn": 64,
+                        "endOffset": 4461
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 4466,
+                    "endColumn": 65,
+                    "endOffset": 4527
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 4466,
+                        "endColumn": 65,
+                        "endOffset": 4527
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 4532,
+                    "endColumn": 66,
+                    "endOffset": 4594
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 4532,
+                        "endColumn": 66,
+                        "endOffset": 4594
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 4599,
+                    "endColumn": 77,
+                    "endOffset": 4672
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 4599,
+                        "endColumn": 77,
+                        "endOffset": 4672
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 4677,
+                    "endColumn": 89,
+                    "endOffset": 4762
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 4677,
+                        "endColumn": 89,
+                        "endOffset": 4762
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 4767,
+                    "endColumn": 72,
+                    "endOffset": 4835
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 4767,
+                        "endColumn": 72,
+                        "endOffset": 4835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4840,
+                    "endColumn": 68,
+                    "endOffset": 4904
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 4840,
+                        "endColumn": 68,
+                        "endOffset": 4904
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4909,
+                    "endColumn": 64,
+                    "endOffset": 4969
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 4909,
+                        "endColumn": 64,
+                        "endOffset": 4969
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 4974,
+                    "endColumn": 67,
+                    "endOffset": 5037
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 4974,
+                        "endColumn": 67,
+                        "endOffset": 5037
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 5042,
+                    "endColumn": 65,
+                    "endOffset": 5103
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 5042,
+                        "endColumn": 65,
+                        "endOffset": 5103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 5108,
+                    "endColumn": 68,
+                    "endOffset": 5172
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 5108,
+                        "endColumn": 68,
+                        "endOffset": 5172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 5177,
+                    "endColumn": 78,
+                    "endOffset": 5251
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 5177,
+                        "endColumn": 78,
+                        "endOffset": 5251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 5256,
+                    "endColumn": 69,
+                    "endOffset": 5321
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 5256,
+                        "endColumn": 69,
+                        "endOffset": 5321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 5326,
+                    "endColumn": 72,
+                    "endOffset": 5394
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 5326,
+                        "endColumn": 72,
+                        "endOffset": 5394
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 5399,
+                    "endColumn": 73,
+                    "endOffset": 5468
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 5399,
+                        "endColumn": 73,
+                        "endOffset": 5468
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 5473,
+                    "endLine": 56,
+                    "endColumn": 12,
+                    "endOffset": 5679
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 5473,
+                        "endLine": 56,
+                        "endColumn": 12,
+                        "endOffset": 5679
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 5684,
+                    "endLine": 60,
+                    "endColumn": 12,
+                    "endOffset": 5932
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 5684,
+                        "endLine": 60,
+                        "endColumn": 12,
+                        "endOffset": 5932
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 5937,
+                    "endLine": 62,
+                    "endColumn": 12,
+                    "endOffset": 5971
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 5937,
+                        "endLine": 62,
+                        "endColumn": 12,
+                        "endOffset": 5971
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 5976,
+                    "endLine": 66,
+                    "endColumn": 12,
+                    "endOffset": 6161
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 5976,
+                        "endLine": 66,
+                        "endColumn": 12,
+                        "endOffset": 6161
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 6166,
+                    "endLine": 77,
+                    "endColumn": 12,
+                    "endOffset": 6763
+                },
+                "from": {
+                    "file": "E:\\WorkSpace\\Studio\\HBKDAssistant\\ViewPagerIndicatorLibaray\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 6166,
+                        "endLine": 77,
+                        "endColumn": 12,
+                        "endOffset": 6763
+                    }
+                }
+            }
+        ]
+    }
+]
