@@ -53,6 +53,8 @@ public class UserPicCutActivity extends AppCompatActivity implements View.OnClic
     private Bitmap bitmap;
     private BmobFile bmobFile;
     private ImageView iv_image;
+    private String fileUrl;
+    private int count=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -141,56 +143,66 @@ public class UserPicCutActivity extends AppCompatActivity implements View.OnClic
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.change_userpic) {
-            String path = saveBitmap(bitmap);
-            if (tempFile != null && !StringUtils.isEmpty(path)) {
+            if (null != bitmap) {
+                final String path = saveBitmap(bitmap);
+                if (tempFile != null && !StringUtils.isEmpty(path)) {
+
+                    bmobFile = new BmobFile(new File(path));
+                    bmobFile.uploadblock(UserPicCutActivity.this, new UploadFileListener() {
+
+                        @Override
+                        public void onSuccess() {
+                            // TODO Auto-generated method stub
+                            //bmobFile.getUrl()---返回的上传文件的地址（不带域名）
+                            fileUrl = bmobFile.getFileUrl(UserPicCutActivity.this);
+                            Intent intent = new Intent();
+                            intent.putExtra("photo", path);
+                            setResult(HASHCHANGE, intent);
+                            //                        Person person = new Person();
+                            //                        person.setPic(bmobFile);
+                            //                        person.save(UserPicCutActivity.this);
+                            Person person = new Person();
+                            person.setPic(bmobFile);
+                            BmobUser bmobUser = BmobUser.getCurrentUser(UserPicCutActivity.this);
+                            person.update(UserPicCutActivity.this, bmobUser.getObjectId(), new UpdateListener() {
+                                @Override
+                                public void onSuccess() {
+                                    // TODO Auto-generated method stub
+                                    UIUtils.showToastSafe("更新成功");
+                                }
+
+                                @Override
+                                public void onFailure(int code, String msg) {
+                                    // TODO Auto-generated method stub
+                                    UIUtils.showToastSafe("更新用户信息失败:" + msg);
+                                }
+                            });
+                            UIUtils.showToastSafe("上传文件成功:" + bmobFile.getFileUrl(UserPicCutActivity.this));
+                            finish();
+                        }
+
+                        @Override
+                        public void onProgress(Integer value) {
+                            // TODO Auto-generated method stub
+                        }
+
+
+                        @Override
+                        public void onFailure(int code, String msg) {
+                            // TODO Auto-generated method stub
+                            UIUtils.showToastSafe("上传文件失败：" + msg);
+                        }
+                    });
+                }
+            } else {
+                UIUtils.showToastSafe("选择默认图片");
                 Intent intent = new Intent();
-                intent.putExtra("photo", path);
+                count=0;
+                intent.putExtra("default", count);
                 setResult(HASHCHANGE, intent);
-                bmobFile = new BmobFile(new File(path));
-                bmobFile.uploadblock(UserPicCutActivity.this, new UploadFileListener() {
-
-                    @Override
-                    public void onSuccess() {
-                        // TODO Auto-generated method stub
-                        //bmobFile.getUrl()---返回的上传文件的地址（不带域名）
-                        //bmobFile.getFileUrl(context)--返回的上传文件的完整地址（带域名）
-//                        Person person = new Person();
-//                        person.setPic(bmobFile);
-//                        person.save(UserPicCutActivity.this);
-
-                        Person person = new Person();
-                        person.setPic(bmobFile);
-                        BmobUser bmobUser = BmobUser.getCurrentUser(UserPicCutActivity.this);
-                        person.update(UserPicCutActivity.this, bmobUser.getObjectId(), new UpdateListener() {
-                            @Override
-                            public void onSuccess() {
-                                // TODO Auto-generated method stub
-                              UIUtils.showToastSafe("更新成功");
-                            }
-
-                            @Override
-                            public void onFailure(int code, String msg) {
-                                // TODO Auto-generated method stub
-                                UIUtils.showToastSafe("更新用户信息失败:" + msg);
-                            }
-                        });
-                        UIUtils.showToastSafe("上传文件成功:" + bmobFile.getFileUrl(UserPicCutActivity.this));
-                        finish();
-                    }
-
-                    @Override
-                    public void onProgress(Integer value) {
-                        // TODO Auto-generated method stub
-                    }
-
-
-                    @Override
-                    public void onFailure(int code, String msg) {
-                        // TODO Auto-generated method stub
-                        UIUtils.showToastSafe("上传文件失败：" + msg);
-                    }
-                });
+                finish();
             }
+
 
         }
 

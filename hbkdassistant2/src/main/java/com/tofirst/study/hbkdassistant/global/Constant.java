@@ -1,9 +1,16 @@
 package com.tofirst.study.hbkdassistant.global;
 
+import com.tofirst.study.hbkdassistant.R;
+
 /**
  * Created by wwjun.wang on 2015/8/11.
  */
 public class Constant {
+    public static final int[] BITMAPS = {R.mipmap.pic_default,
+            R.mipmap.pic_default, R.mipmap.pic_default, R.mipmap.pic_default,
+            R.mipmap.pic_default,
+            R.mipmap.pic_default, R.mipmap.pic_default,
+            R.mipmap.pic_default, R.mipmap.pic_default};
     public static final String BASEURL = "http://news-at.zhihu.com/api/4/";
     public static final String START = "start-image/1080*1776";
     public static final String THEMES = "themes";

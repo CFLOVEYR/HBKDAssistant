@@ -15,9 +15,6 @@ import com.tofirst.study.hbkdassistant.utils.common.ToastUtils;
 import cn.bmob.v3.BmobUser;
 
 public class SettingActivity extends BaseActivity {
-    private LinearLayout ll_personal_info;
-    private LinearLayout ll_personal_collect;
-    private LinearLayout ll_personal_remark;
     private Button bt_setting_sign_out;
     private Button bt_setting_sign_out1;
     private LinearLayout ll_about_author;
@@ -55,9 +52,6 @@ public class SettingActivity extends BaseActivity {
     }
 
     private void initViews() {
-        ll_personal_info = (LinearLayout) findViewById(R.id.ll_personal_info);//个人信息
-        ll_personal_collect = (LinearLayout) findViewById(R.id.ll_personal_collect);//个人收藏
-        ll_personal_remark = (LinearLayout) findViewById(R.id.ll_personal_remark);//个人评论
         ll_auto_setting = (LinearLayout) findViewById(R.id.ll_auto_setting);//自动跟新设置
         ll_photo_setting = (LinearLayout) findViewById(R.id.ll_photo_setting);//图片加载
         ll_message_setting = (LinearLayout) findViewById(R.id.ll_message_setting);//消息提醒设置
@@ -67,10 +61,10 @@ public class SettingActivity extends BaseActivity {
         ll_share_friend = (LinearLayout) findViewById(R.id.ll_share_friend);//分享给朋友
         ll_about_author = (LinearLayout) findViewById(R.id.ll_about_author);//关于作者
         bt_setting_sign_out1 = (Button) findViewById(R.id.bt_setting_sign_out);//销毁退出
-/**
- *
- * 不需要判断是否要进入登录界面的模块
- */
+        /**
+         *
+         * 不需要判断是否要进入登录界面的模块
+         */
         //自动更新设置
         ll_auto_setting.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,50 +96,6 @@ public class SettingActivity extends BaseActivity {
         /**
          *  判读是否要进入登录页面的逻辑的模块
          */
-        //个人信息
-        ll_personal_info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                BmobUser bmobUser = BmobUser.getCurrentUser(SettingActivity.this);
-                if (bmobUser != null) {
-                    // 允许用户使用应用,然后是自己的逻辑
-                    ToastUtils.showToast(SettingActivity.this, "即将进入个人信息");
-
-
-                } else {
-                    //缓存用户对象为空时， 可打开用户登录界面…
-                    SettingActivity.this.startActivity(new Intent(SettingActivity.this, LoginActivity.class));
-                }
-            }
-        });
-        //个人评论
-        ll_personal_remark.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                BmobUser bmobUser = BmobUser.getCurrentUser(SettingActivity.this);
-                if (bmobUser != null) {
-                    // 允许用户使用应用,然后是自己的逻辑
-                    ToastUtils.showToast(SettingActivity.this, "即将进入个人评论");
-                } else {
-                    //缓存用户对象为空时， 可打开用户登录界面…
-                    SettingActivity.this.startActivity(new Intent(SettingActivity.this, LoginActivity.class));
-                }
-            }
-        });
-        //个人收藏
-        ll_personal_collect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                BmobUser bmobUser = BmobUser.getCurrentUser(SettingActivity.this);
-                if (bmobUser != null) {
-                    // 允许用户使用应用,然后是自己的逻辑
-                    ToastUtils.showToast(SettingActivity.this, "即将进入个人收藏");
-                } else {
-                    //缓存用户对象为空时， 可打开用户登录界面…
-                    SettingActivity.this.startActivity(new Intent(SettingActivity.this, LoginActivity.class));
-                }
-            }
-        });
         //图片加载设置
         ll_photo_setting.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -182,7 +132,7 @@ public class SettingActivity extends BaseActivity {
                 if (bmobUser != null) {
                     // 允许用户使用应用,然后是自己的逻辑
 //                    ToastUtils.showToast(SettingActivity.this, "即将进入反馈意见");
-                   startActivity(new Intent(SettingActivity.this, FeedActivity.class));
+                    startActivity(new Intent(SettingActivity.this, FeedActivity.class));
                 } else {
                     //缓存用户对象为空时， 可打开用户登录界面…
                     SettingActivity.this.startActivity(new Intent(SettingActivity.this, LoginActivity.class));

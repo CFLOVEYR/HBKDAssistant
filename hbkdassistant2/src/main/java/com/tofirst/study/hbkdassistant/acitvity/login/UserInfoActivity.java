@@ -14,8 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.domain.Person;
+import com.tofirst.study.hbkdassistant.global.Constant;
 import com.tofirst.study.hbkdassistant.utils.common.IOUtils;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
@@ -48,6 +51,9 @@ public class UserInfoActivity extends AppCompatActivity {
     private boolean isLight;
     private Toolbar toolbar;
     private CircleImageView user_icon;
+    private ImageLoader mImageloader;
+    private DisplayImageOptions options;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,12 +102,17 @@ public class UserInfoActivity extends AppCompatActivity {
                 startActivityForResult(new Intent(UserInfoActivity.this, UserPicCutActivity.class), 1);
             }
         });
+
+        mImageloader = ImageLoader.getInstance();
+        options = new DisplayImageOptions.Builder()
+                .cacheInMemory(true)
+                .cacheOnDisk(true)
+                .build();
     }
 
     private void initData() {
         //从服务器拿到数据
         getDataFromServer();
-
     }
 
     @Override
@@ -128,9 +139,12 @@ public class UserInfoActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == UserPicCutActivity.HASHCHANGE) {
             String path = data.getStringExtra("photo");
-            Bitmap bitmap = getBitmap(path);
-            if (bitmap != null) {
+            int count = data.getIntExtra("default", 0);
+            if (path != null) {
+                Bitmap bitmap = getBitmap(path);
                 user_icon.setImageBitmap(bitmap);
+            } else {
+                user_icon.setImageResource(Constant.BITMAPS[count]);
             }
         }
     }
@@ -139,19 +153,31 @@ public class UserInfoActivity extends AppCompatActivity {
      * 从服务器获得信息
      */
     private void getDataFromServer() {
-        Person user = BmobUser.getCurrentUser(this, Person.class);
+        final Person user = BmobUser.getCurrentUser(this, Person.class);
         //加载图片
         BmobQuery<Person> query = new BmobQuery<Person>();
         query.findObjects(this, new FindListener<Person>() {
 
             @Override
-            public void onSuccess(List<Person> arg0) {
+            public void onSuccess(List<Person> persons) {
                 // TODO Auto-generated method stub
-                if(arg0.size()>0){
-                    // 如果查询结果大于0，取第一条数据的icon缩略图进行显示
-                    arg0.get(0).getPic().loadImageThumbnail(UserInfoActivity.this, user_icon, 100, 100);
+                if (persons.size() > 0) {
+                    for (Person person : persons) {
+                        if (person.getUsername().equals(user.getUsername())) {
+                            person.getPic().loadImageThumbnail(UserInfoActivity.this, user_icon, 100, 100);
+                            UIUtils.showToastSafe("图片下载成功");
+                        }
+
+                    }
                 }
-                UIUtils.showToastSafe("图片下载成功");
+
+//                if(persons.size()>0){
+//                    // 如果查询结果大于0，取第一条数据的icon缩略图进行显示
+//                    persons.get(0).getPic().loadImageThumbnail(UserInfoActivity.this, user_icon, 100, 100);
+//                    UIUtils.showToastSafe("图片下载成功" );
+//                    mImageloader.displayImage(persons.get(0).getPic().getFileUrl(UserInfoActivity.this), user_icon, options);
+//                }
+
             }
 
             @Override
@@ -195,16 +221,17 @@ public class UserInfoActivity extends AppCompatActivity {
             tb_user_pnumber_bd.setSlideable(false);
             tb_user_email_bd.setSlideable(false);
             //判断是否绑定手机
-            if (null!=user.getMobilePhoneNumberVerified()) {
+            if (null != user.getMobilePhoneNumberVerified()) {
                 tb_user_pnumber_bd.setState(user.getMobilePhoneNumberVerified());
             }
 
             //判断是否绑定邮箱
-            if (null!=user.getEmailVerified()) {
+            if (null != user.getEmailVerified()) {
                 tb_user_email_bd.setState(user.getEmailVerified());
             }
         }
     }
+
     //保存图片并返回路径
     public Bitmap getBitmap(String path) {
         Bitmap bitmap = null;

@@ -27,7 +27,6 @@ public class ExamRequirePager extends BasePaper {
     private EditText et_exam_require_subject;
     private EditText et_exam_require_experience;
     private Button bt_exam_require;
-
     public ExamRequirePager(AppCompatActivity mActivity) {
         super(mActivity);
     }

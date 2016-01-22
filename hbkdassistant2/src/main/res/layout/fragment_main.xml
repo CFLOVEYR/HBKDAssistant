@@ -22,51 +22,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout style="@style/wrap_layout">
-                <!-- 上圆角   第一个条目-->
-                <!--个人信息-->
-                <LinearLayout
-                    android:id="@+id/ll_personal_info"
-                    style="@style/top_layout"
-                    android:clickable="true">
-
-                    <TextView
-                        style="@style/usertext"
-                        android:text="个人信息" />
-
-                    <ImageView style="@style/img_arrow" />
-                </LinearLayout>
-
-                <!-- 分割线 -->
-                <View style="@style/bg_line" />
-                <!-- 无圆角-->
-                <!--我的收藏-->
-                <LinearLayout
-                    android:id="@+id/ll_personal_collect"
-                    style="@style/mid_layout">
-
-                    <TextView
-                        style="@style/usertext"
-                        android:text="我的收藏" />
-
-                    <ImageView style="@style/img_arrow" />
-                </LinearLayout>
-
-                <View style="@style/bg_line" />
-                <!-- 下圆角-->
-                <!--我的更新-->
-                <LinearLayout
-                    android:id="@+id/ll_personal_remark"
-                    style="@style/bottom_layout">
-
-                    <TextView
-                        style="@style/usertext"
-                        android:text="我的评论" />
-
-                    <ImageView style="@style/img_arrow" />
-                </LinearLayout>
-
-            </LinearLayout>
 
             <LinearLayout style="@style/wrap_layout">
                 <!-- 上圆角-->

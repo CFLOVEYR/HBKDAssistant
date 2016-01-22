@@ -89,16 +89,24 @@
         <!-- 自动更新的对话界面 -->
         <activity
             android:name="cn.bmob.v3.update.UpdateDialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
-        <activity android:name=".acitvity.login.UserPicCutActivity"></activity>
-        <!--新闻第一页-->
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".acitvity.login.UserPicCutActivity" />
+        <!-- 新闻第一页 -->
         <activity
             android:name=".acitvity.main.LatestContentActivity"
             android:theme="@style/AppTheme.TransparentActivity" />
-        <!--新闻后几页-->
+        <!-- 新闻后几页 -->
         <activity
             android:name=".acitvity.main.NewsContentActivity"
-            android:theme="@style/AppTheme.TransparentActivity"></activity>
+            android:theme="@style/AppTheme.TransparentActivity" />
+        <!--详细展示分享经验的页面-->
+        <activity
+            android:name=".acitvity.main.ExamShowDetailActivity"
+            android:parentActivityName=".acitvity.main.ExamShareActivity" />
+        <!--详细展示经验需求的页面-->
+        <activity
+            android:name=".acitvity.main.ExamShowShareActivity"
+            android:parentActivityName=".acitvity.main.ExamShareActivity"></activity>
     </application>
 
 </manifest>
