@@ -14,28 +14,6 @@ import java.io.File;
 
 import cn.bmob.v3.Bmob;
 
-/**
- * =========================================================
- * <p/>
- * 版权: 个人开发Mr.Jalen  版权所有(c) ${YEAR}
- * <p/>
- * 作者:${USER}
- * <p/>
- * 版本: 1.0
- * <p/>
- * <p/>
- * 创建日期 : ${DATE}  ${HOUR}:${MINUTE}
- * <p/>
- * <p/>
- * 邮箱：Studylifetime@sina.com
- * <p/>
- * 描述:
- * <p/>
- * <p/>
- * 修订历史:
- * <p/>
- * =========================================================
- */
 public class BaseApplication extends Application {
     //获取到主线程的上下文
     private static BaseApplication mContext;

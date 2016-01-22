@@ -1,5 +1,9 @@
 package com.tofirst.study.hbkdassistant.base.study;
 
+import android.content.ContentResolver;
+import android.database.ContentObserver;
+import android.net.Uri;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,17 +13,12 @@ import android.widget.TextView;
 
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.base.BasePaper;
-import com.tofirst.study.hbkdassistant.domain.ExamAddExperience;
-import com.tofirst.study.hbkdassistant.domain.Person;
-import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
+import com.tofirst.study.hbkdassistant.dao.ExamCasheDao;
 import com.tofirst.study.hbkdassistant.utils.common.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import cn.bmob.v3.BmobQuery;
-import cn.bmob.v3.listener.FindListener;
-import cn.bmob.v3.listener.GetListener;
+import java.util.Map;
 
 /**
  * 查看资料页面
@@ -27,9 +26,11 @@ import cn.bmob.v3.listener.GetListener;
 public class ExamLookPager extends BasePaper {
 
     private View examLookView;
-    static final List<String> mData = new ArrayList<>();
+    public List<String> mData = new ArrayList<>();
     private ListView lv_exam_look;
     private ExamLookAdapter adapter;
+    private ExamDataObserver observer;
+    private ContentResolver contentResolver;
 
     public ExamLookPager(AppCompatActivity mActivity) {
         super(mActivity);
@@ -40,57 +41,28 @@ public class ExamLookPager extends BasePaper {
         super.initViews();
         examLookView = View.inflate(mActivity, R.layout.study_exam_look, null);
         lv_exam_look = (ListView) examLookView.findViewById(R.id.lv_exam_look);
+
+        //注册一个广播观察者
+        observer = new ExamDataObserver(new Handler());
+        Uri parse = Uri.parse("content://com.tofirst.study.hbkdassistant.examchange");
+        contentResolver = mActivity.getContentResolver();
+        contentResolver.registerContentObserver(parse, true, observer);
     }
 
 
     @Override
     public void initData() {
         super.initData();
-        //网络获取数据
-        getDataFromServer();
-
-        adapter = new ExamLookAdapter();
-        lv_exam_look.setAdapter(adapter);
-        ViewUtils.removeSelfFromParent(examLookView);
+        upDateData();
+        if (mData != null) {
+//            UIUtils.showToastSafe(mData.toString());
+            adapter = new ExamLookAdapter();
+            lv_exam_look.setAdapter(adapter);
+            ViewUtils.removeSelfFromParent(examLookView);
+        }
         fl_base_content.addView(examLookView);
-
     }
 
-    private void getDataFromServer() {
-        final BmobQuery<ExamAddExperience> query = new BmobQuery<ExamAddExperience>();
-        query.setLimit(10);
-        query.findObjects(mActivity, new FindListener<ExamAddExperience>() {
-            @Override
-            public void onSuccess(final List<ExamAddExperience> list) {
-
-                for (final ExamAddExperience exp : list) {
-                    BmobQuery<Person> query_1 = new BmobQuery<Person>();
-                    query_1.getObject(mActivity, exp.getUserID(), new GetListener<Person>() {
-                        @Override
-                        public void onSuccess(Person person) {
-                            if (mData.size() <= list.size()) {
-                                mData.add(person.getUsername() + "科目  " + exp.getSubject() + " 经验" + exp.getExperience());
-                            }
-//                            UIUtils.showToastSafe(person.getUsername() + "科目  " + exp.getSubject() + " 经验" + exp.getExperience());
-                        }
-
-                        @Override
-                        public void onFailure(int i, String s) {
-//                            UIUtils.showToastSafe("查询失败" + s);
-                        }
-
-
-                    });
-                }
-
-            }
-
-            @Override
-            public void onError(int i, String s) {
-                UIUtils.showToastSafe("网络失败" + s);
-            }
-        });
-    }
 
     class ExamLookAdapter extends BaseAdapter {
 
@@ -126,10 +98,48 @@ public class ExamLookPager extends BasePaper {
     }
 
     class ViewHolder {
-
         TextView textView;
-
     }
 
+    /**
+     * 更新数据
+     */
+    public void upDateData() {
+        ExamCasheDao dao = new ExamCasheDao(mActivity);
+        List<Map<String, String>> list_add = dao.queryAllAdd();
+        List<Map<String, String>> list_require = dao.queryAllRequire();
+        mData.clear();
+        for (Map<String, String> mExamData : list_add) {
+            String username = mExamData.get("name");
+            String subject = mExamData.get("subject");
+            String experience = mExamData.get("experience");
+            mData.add(username + "分享了" + subject + "经验");
+        }
+        for (Map<String, String> mExamData : list_require) {
+            String username = mExamData.get("name");
+            String subject = mExamData.get("subject");
+            String require = mExamData.get("require");
+            mData.add(username + "需求" + subject +"经验");
+        }
+    }
+
+    /**
+     * 监听数据变化的观察者
+     */
+    class ExamDataObserver extends ContentObserver {
+
+        public ExamDataObserver(Handler handler) {
+            super(handler);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            super.onChange(selfChange, uri);
+            //更新数据
+            upDateData();
+//            UIUtils.showToastSafe("数据改变了" + mData.size());
+            adapter.notifyDataSetChanged();
+        }
+    }
 
 }

@@ -7,9 +7,13 @@ import android.widget.EditText;
 
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.base.BasePaper;
+import com.tofirst.study.hbkdassistant.dao.ExamCasheDao;
 import com.tofirst.study.hbkdassistant.domain.ExamAddExperience;
 import com.tofirst.study.hbkdassistant.utils.common.StringUtils;
 import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.listener.SaveListener;
@@ -56,11 +60,16 @@ public class ExamAddPager extends BasePaper {
                 } else {
 
                     ExamAddExperience exam = new ExamAddExperience();
-
                     BmobUser currentUser =  BmobUser.getCurrentUser(mActivity);//获取当前对象
-                    UIUtils.showToastSafe("name--->>"+currentUser.getUsername());
-                    String userID = currentUser.getObjectId();
+                    //添加数据
+                    Map<String, String> mExamData=new HashMap<>();
+                    mExamData.put("name",currentUser.getUsername());
+                    mExamData.put("subject",subject);
+                    mExamData.put("experience",experience);
+                    ExamCasheDao dao=new ExamCasheDao(mActivity);
+                    dao.insertAdd(mExamData);
 
+                    String userID = currentUser.getObjectId();
                     exam.setUserID(userID);
                     exam.setSubject(subject);
                     exam.setExperience(experience);
@@ -81,13 +90,8 @@ public class ExamAddPager extends BasePaper {
         });
     }
 
-
-
-
     @Override
     public void initData() {
         super.initData();
-
-
     }
 }

@@ -22,7 +22,8 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import com.tofirst.study.hbkdassistant.R;
-import com.tofirst.study.hbkdassistant.db.CacheDbHelper;
+import com.tofirst.study.hbkdassistant.db.ExamShareCacheDbHelper;
+import com.tofirst.study.hbkdassistant.db.NewsCacheDbHelper;
 import com.tofirst.study.hbkdassistant.fragment.main.ContentFragment;
 import com.tofirst.study.hbkdassistant.fragment.zhnews.MenuFragment;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
@@ -38,16 +39,22 @@ public class MainActivity extends BaseActivity {
     private long firstTime;
     private Toolbar toolbar;
     private boolean isLight;
-    private CacheDbHelper dbHelper;
+    private NewsCacheDbHelper dbHelper;
     private String curId;
+    private ExamShareCacheDbHelper examdbHelper;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         isLight = SharePreUtils.getsPreBoolean(this, "isLight", true);//主题模式
-        dbHelper = new CacheDbHelper(this, 1);//创建缓存数据库
+        initCache();
         initViews();
+    }
+
+    private void initCache() {
+        dbHelper = new NewsCacheDbHelper(this, 1);//创建缓存数据库
+        examdbHelper = new ExamShareCacheDbHelper(this, "examcashe.db", null, 1);//创建数据库缓存
     }
 
     public void loadLatest() {
@@ -277,4 +284,5 @@ public class MainActivity extends BaseActivity {
     public void setToolbarTitle(String title) {
         toolbar.setTitle(title);
     }
+
 }

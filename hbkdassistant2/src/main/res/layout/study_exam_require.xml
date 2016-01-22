@@ -20,6 +20,7 @@
             android:textSize="25sp" />
 
         <EditText
+            android:textColor="@color/black"
             android:id="@+id/et_exam_require_subject"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -37,6 +38,7 @@
 
     <EditText
         android:gravity="top"
+        android:textColor="@color/black"
         android:id="@+id/et_exam_require_experience"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -49,6 +51,7 @@
         android:layout_gravity="center_horizontal"
         android:padding="10dp"
         android:text="提交"
+        android:background="@drawable/btn_image_selector"
         android:textColor="@color/black"
         android:textSize="25sp" />
 </LinearLayout>

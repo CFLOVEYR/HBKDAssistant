@@ -21,6 +21,7 @@
 
         <EditText
             android:id="@+id/et_exam_add_subject"
+            android:textColor="@color/black"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent" />
@@ -37,12 +38,14 @@
 
     <EditText
         android:gravity="top"
+        android:textColor="@color/black"
         android:id="@+id/et_exam_add_experience"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="10dp" />
 
     <Button
+        android:background="@drawable/btn_image_selector"
         android:id="@+id/bt_exam_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -7,9 +7,13 @@ import android.widget.EditText;
 
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.base.BasePaper;
+import com.tofirst.study.hbkdassistant.dao.ExamCasheDao;
 import com.tofirst.study.hbkdassistant.domain.ExamRequireExperience;
 import com.tofirst.study.hbkdassistant.utils.common.StringUtils;
 import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.listener.SaveListener;
@@ -42,30 +46,35 @@ public class ExamRequirePager extends BasePaper {
         bt_exam_require = (Button) examRequireView.findViewById(R.id.bt_exam_require);
 
 
-
         //提交到服务器
         bt_exam_require.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String subject = et_exam_require_subject.getText().toString();
-                String experience = et_exam_require_experience.getText().toString();
+                String require = et_exam_require_experience.getText().toString();
                 //判断输入内容是否为空
-                if (StringUtils.isEmpty(subject) || StringUtils.isEmpty(experience)) {
+                if (StringUtils.isEmpty(subject) || StringUtils.isEmpty(require)) {
                     UIUtils.showToastSafe("科目或需求不能为空哟!!么么哒");
                 } else {
-
-                    ExamRequireExperience requre = new ExamRequireExperience();
-
                     BmobUser currentUser = BmobUser.getCurrentUser(mActivity);//获取当前对象
-                    UIUtils.showToastSafe("name--->>" + currentUser.getUsername());
                     String userID = currentUser.getObjectId();
 
-                    requre.setUserID(userID);
-                    requre.setSubject(subject);
-                    requre.setRequire(experience);
+                    //添加数据到本地数据库
+                    Map<String, String> mExamData = new HashMap<>();
+                    mExamData.put("name", currentUser.getUsername());
+                    mExamData.put("subject", subject);
+                    mExamData.put("require", require);
+                    ExamCasheDao dao = new ExamCasheDao(mActivity);
+                    dao.insertRequire(mExamData);
 
-                    requre.save(mActivity, new SaveListener() {
+                    //需要上传服务器
+                    ExamRequireExperience exam = new ExamRequireExperience();
+                    exam.setUserID(userID);
+                    exam.setSubject(subject);
+                    exam.setRequire(require);
+
+                    exam.save(mActivity, new SaveListener() {
                         @Override
                         public void onSuccess() {
                             UIUtils.showToastSafe("添加成功");
@@ -80,8 +89,6 @@ public class ExamRequirePager extends BasePaper {
             }
         });
     }
-
-
 
 
     @Override

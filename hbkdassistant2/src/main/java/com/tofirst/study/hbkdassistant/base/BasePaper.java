@@ -20,15 +20,16 @@ public class BasePaper {
     public FrameLayout fl_base_content;
     public TextView textView;
 
-    public BasePaper(AppCompatActivity mActivity){
-        this.mActivity=mActivity;
+    public BasePaper(AppCompatActivity mActivity) {
+        this.mActivity = mActivity;
         initViews();
     }
+
 
     /**
      * 初始化组件
      */
-    public void initViews(){
+    public void initViews() {
         mRootView = View.inflate(mActivity, R.layout.layout_base_paper, null);
         fl_base_content = (FrameLayout) mRootView.findViewById(R.id.fl_base_content);//内容
         textView = new TextView(mActivity);
@@ -40,7 +41,7 @@ public class BasePaper {
     /**
      * 初始化数据
      */
-    public void initData(){
+    public void initData() {
 
     }
 

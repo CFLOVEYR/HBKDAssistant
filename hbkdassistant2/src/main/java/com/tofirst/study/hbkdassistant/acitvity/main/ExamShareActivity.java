@@ -118,5 +118,4 @@ public class ExamShareActivity extends BaseActivity {
         }
     }
 
-
 }

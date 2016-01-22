@@ -5,10 +5,29 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by wwjun.wang on 2015/8/19.
+ * =========================================================
+ *
+ *  版权: 个人开发Mr.Jalen  版权所有(c) ${YEAR}
+ *
+ *  作者:${USER}
+ *
+ *  版本: 1.0
+ *
+ *
+ *  创建日期 : ${DATE}  ${HOUR}:${MINUTE}
+ *
+ *
+ * 邮箱：Studylifetime@sina.com
+ *
+ * 描述:
+ *      用于缓存新闻数据的类
+ *
+ * 修订历史:
+ *
+ * =========================================================
  */
-public class CacheDbHelper extends SQLiteOpenHelper {
-    public CacheDbHelper(Context context, int version) {
+public class NewsCacheDbHelper extends SQLiteOpenHelper {
+    public NewsCacheDbHelper(Context context, int version) {
         super(context, "cache.db", null, version);
     }
 
