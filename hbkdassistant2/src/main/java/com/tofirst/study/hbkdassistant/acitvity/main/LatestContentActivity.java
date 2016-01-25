@@ -31,6 +31,7 @@ import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 import com.tofirst.study.hbkdassistant.utils.xutils3.HttpUtils;
 import com.tofirst.study.hbkdassistant.utils.xutils3.XUtil;
 import com.tofirst.study.hbkdassistant.view.RevealBackgroundView;
+import com.umeng.analytics.MobclickAgent;
 
 
 /**
@@ -172,5 +173,16 @@ public class LatestContentActivity extends AppCompatActivity implements RevealBa
             }
             window.setStatusBarColor(statusBarColor);
         }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

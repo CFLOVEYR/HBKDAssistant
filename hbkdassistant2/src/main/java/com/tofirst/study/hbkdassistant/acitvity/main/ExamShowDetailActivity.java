@@ -2,14 +2,13 @@ package com.tofirst.study.hbkdassistant.acitvity.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.EditText;
 
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 
-public class ExamShowDetailActivity extends AppCompatActivity {
+public class ExamShowDetailActivity extends BaseActivity {
     private boolean isLight;
     private Toolbar toolbar;
     private EditText et_exam_require_subject;
@@ -19,11 +18,22 @@ public class ExamShowDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam_show_detail);
-        initView();
+        initViews();
         initToolBar();
     }
 
-    private void initView() {
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    protected void initViews() {
         et_exam_require_subject = (EditText) findViewById(R.id.et_exam_require_show_subject);
         et_exam_require_experience = (EditText) findViewById(R.id.et_exam_require_show_experience);
         initToolBar();

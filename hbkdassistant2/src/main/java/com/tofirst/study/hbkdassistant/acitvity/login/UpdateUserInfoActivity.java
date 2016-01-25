@@ -12,6 +12,7 @@ import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.domain.Person;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 import com.tofirst.study.hbkdassistant.view.SlideSwitch;
+import com.umeng.analytics.MobclickAgent;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.listener.UpdateListener;
@@ -153,5 +154,16 @@ public class UpdateUserInfoActivity extends AppCompatActivity {
         }
 
 
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

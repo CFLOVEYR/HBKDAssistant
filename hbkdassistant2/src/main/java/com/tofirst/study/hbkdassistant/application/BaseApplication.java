@@ -43,11 +43,15 @@ public class BaseApplication extends Application {
 
         // 初始化 Bmob SDK
         Bmob.initialize(this, "9fcd33170d268436fda52e4685c8ed7d");
+
+
         //初始化XUtils3
         x.Ext.init(this);
         //设置debug模式
         x.Ext.setDebug(true);
         initImageLoader(this);
+
+
     }
 
     /**
@@ -77,6 +81,7 @@ public class BaseApplication extends Application {
     public static int getMainThreadId() {
         return mMainThreadId;
     }
+
     private void initImageLoader(Context context) {
         File cacheDir = StorageUtils.getCacheDirectory(context);
 /*        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(

@@ -12,6 +12,7 @@ import com.tofirst.study.hbkdassistant.acitvity.main.BaseActivity;
 import com.tofirst.study.hbkdassistant.acitvity.main.MainActivity;
 import com.tofirst.study.hbkdassistant.domain.Person;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
+import com.umeng.analytics.MobclickAgent;
 
 import cn.bmob.v3.listener.SaveListener;
 
@@ -96,5 +97,16 @@ public class RegisterActivity extends BaseActivity {
             }
         }
 
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

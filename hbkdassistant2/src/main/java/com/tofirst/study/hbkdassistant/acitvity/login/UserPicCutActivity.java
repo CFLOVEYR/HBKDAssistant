@@ -26,6 +26,7 @@ import com.tofirst.study.hbkdassistant.utils.common.FileUtils;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 import com.tofirst.study.hbkdassistant.utils.common.StringUtils;
 import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -312,5 +313,16 @@ public class UserPicCutActivity extends AppCompatActivity implements View.OnClic
             e.printStackTrace();
         }
         return path;
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

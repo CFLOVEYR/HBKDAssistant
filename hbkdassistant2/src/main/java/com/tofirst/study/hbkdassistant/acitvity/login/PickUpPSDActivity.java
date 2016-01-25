@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
+import com.umeng.analytics.MobclickAgent;
 
 import cn.bmob.v3.BmobSMS;
 import cn.bmob.v3.BmobUser;
@@ -100,5 +101,16 @@ public class PickUpPSDActivity extends AppCompatActivity {
                 }
             });
         }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

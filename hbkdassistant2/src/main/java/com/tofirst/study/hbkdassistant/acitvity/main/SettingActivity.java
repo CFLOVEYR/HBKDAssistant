@@ -11,8 +11,14 @@ import com.tofirst.study.hbkdassistant.acitvity.feedback.FeedActivity;
 import com.tofirst.study.hbkdassistant.acitvity.login.LoginActivity;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 import com.tofirst.study.hbkdassistant.utils.common.ToastUtils;
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengDialogButtonListener;
+import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UpdateStatus;
 
 import cn.bmob.v3.BmobUser;
+
+import static com.umeng.analytics.MobclickAgent.onProfileSignOff;
 
 public class SettingActivity extends BaseActivity {
     private Button bt_setting_sign_out;
@@ -69,7 +75,8 @@ public class SettingActivity extends BaseActivity {
         ll_auto_setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtils.showToast(SettingActivity.this, "自动更新设置");
+//                ToastUtils.showToast(SettingActivity.this, "自动更新设置");
+                SettingActivity.this.startActivity(new Intent(SettingActivity.this, UpdateSelectActivity.class));
             }
         });
         //应用推荐
@@ -83,7 +90,26 @@ public class SettingActivity extends BaseActivity {
         ll_check_version.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtils.showToast(SettingActivity.this, "检查版本更新");
+                //重写一下这个监听,防止再次跳入主页面
+                UmengUpdateAgent.setDialogListener(new UmengDialogButtonListener() {
+
+                    @Override
+                    public void onClick(int status) {
+                        switch (status) {
+                            case UpdateStatus.Update:
+
+                                break;
+                            case UpdateStatus.Ignore:
+
+                                break;
+                            case UpdateStatus.NotNow:
+
+                                break;
+                        }
+                    }
+                });
+                //强制检查更新
+                UmengUpdateAgent.forceUpdate(SettingActivity.this);
             }
         });
         //关于作者
@@ -161,7 +187,21 @@ public class SettingActivity extends BaseActivity {
             public void onClick(View v) {
                 BmobUser.logOut(SettingActivity.this);   //清除缓存用户对象
                 BmobUser currentUser = BmobUser.getCurrentUser(SettingActivity.this);
+                //友盟统计登录时长
+                onProfileSignOff();
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

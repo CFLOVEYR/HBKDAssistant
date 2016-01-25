@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.domain.FeedBack;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
+import com.umeng.analytics.MobclickAgent;
 
 import cn.bmob.v3.BmobInstallation;
 import cn.bmob.v3.BmobPushManager;
@@ -122,6 +123,17 @@ public class FeedActivity extends AppCompatActivity {
                 Log.e("bmob", "保存反馈信息失败：" + arg0);
             }
         });
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 
 }

@@ -48,9 +48,11 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         isLight = SharePreUtils.getsPreBoolean(this, "isLight", true);//主题模式
+
         initCache();
         initViews();
     }
+
 
     private void initCache() {
         dbHelper = new NewsCacheDbHelper(this, 1);//创建缓存数据库

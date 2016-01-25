@@ -1,13 +1,7 @@
 package com.tofirst.study.hbkdassistant.acitvity.main;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.animation.AlphaAnimation;
@@ -22,34 +16,22 @@ import android.widget.Toast;
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.global.ServiceURL;
 import com.tofirst.study.hbkdassistant.inteface.MyCallBack;
-import com.tofirst.study.hbkdassistant.inteface.MyProgressCallBack;
 import com.tofirst.study.hbkdassistant.utils.common.LogUtils;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
 import com.tofirst.study.hbkdassistant.utils.common.VersionUtils;
-import com.tofirst.study.hbkdassistant.utils.common.parsesJsonDataUtils;
 import com.tofirst.study.hbkdassistant.utils.xutils3.XUtil;
-
-import java.io.File;
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengDialogButtonListener;
+import com.umeng.update.UmengUpdateAgent;
+import com.umeng.update.UmengUpdateListener;
+import com.umeng.update.UpdateResponse;
+import com.umeng.update.UpdateStatus;
 
 public class SplashActivity extends AppCompatActivity {
 
     private AnimationSet set;
     private boolean UpdateFlag = false;
-    private Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            switch (msg.what) {
-                case 1:
-
-                    break;
-                default:
-
-                    break;
-            }
-        }
-    };
     private boolean enterDialogFlag = false;
     private RelativeLayout rl_spalash;
     private TextView tv_splash_versionName;
@@ -66,56 +48,6 @@ public class SplashActivity extends AppCompatActivity {
         initAnimotionListener();
     }
 
-
-    /**
-     * 检查版本更新
-     */
-    private void checkVersion() {
-        /**
-         * 是否设置不自动检查更新
-         */
-        if (!SharePreUtils.getsPreBoolean(this, "UpdateFlag", false)) {
-            int versionCode_local = VersionUtils.getVersionCode(this);
-            int versionCode_server = parsesJsonDataUtils.getVersionCode(this, ServiceURL.FirstJsonURL);
-            //如果本地版本小于服务器版本的话
-            if (versionCode_local < versionCode_server) {
-                UpdateFlag = true;
-            }
-        }
-    }
-
-    /**
-     * 展示是否更新的对话框
-     */
-    private void showUpdateDialog() {
-        enterDialogFlag = true;
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("最新版本: " + parsesJsonDataUtils.getVersionName(this, ServiceURL.FirstJsonURL));
-        String message = parsesJsonDataUtils.getVersionDescrpition(this, ServiceURL.FirstJsonURL);
-        builder.setMessage(message);
-        builder.setPositiveButton("立即更新", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                downLoadApk();
-            }
-        });
-        builder.setNegativeButton("下次再说", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                enterNext();
-            }
-        });
-        /**
-         * 取消对话框的操作
-         */
-        builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                enterNext();
-            }
-        });
-        builder.show();
-    }
 
     /**
      * 初始化数据
@@ -139,7 +71,7 @@ public class SplashActivity extends AppCompatActivity {
      */
     private void getDataFromServer() {
         //get获取Json字符串
-        XUtil.GetJson(ServiceURL.FirstJsonURL,new MyCallBack<String>(){
+        XUtil.GetJson(ServiceURL.FirstJsonURL, new MyCallBack<String>() {
             @Override
             public void onSuccess(String result) {
                 if (result != null) {
@@ -147,9 +79,10 @@ public class SplashActivity extends AppCompatActivity {
                     //获取版本名称
                     tv_splash_versionName.setText("版本号:  " + VersionUtils.getVersionName(SplashActivity.this));
                     //检查版本更新
-                    checkVersion();
+//                    checkVersion();
                 }
             }
+
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 LogUtils.i("解析失败");
@@ -171,11 +104,10 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                if (UpdateFlag) {
-                    showUpdateDialog();
-                } else {
-                    enterNext();
-                }
+
+                initSDK();
+
+
             }
 
             @Override
@@ -183,6 +115,65 @@ public class SplashActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void initSDK() {
+
+        UmengUpdateAgent.setUpdateListener(new UmengUpdateListener() {
+            @Override
+            public void onUpdateReturned(int status, UpdateResponse updateResponse) {
+
+                if (UmengUpdateAgent.isIgnore(SplashActivity.this, updateResponse)) {
+                    enterNext();
+                } else {
+                    switch (status) {
+                        case UpdateStatus.Yes: // has update
+
+                            break;
+                        case UpdateStatus.No: // has no update
+                            enterNext();
+                            break;
+                        case UpdateStatus.NoneWifi: // none wifi
+                            Toast.makeText(SplashActivity.this, "网络异常", Toast.LENGTH_SHORT).show();
+                            enterNext();
+                            break;
+                        case UpdateStatus.Timeout: // time out
+                            Toast.makeText(SplashActivity.this, "链接超时", Toast.LENGTH_SHORT).show();
+                            enterNext();
+                            break;
+                    }
+                }
+
+
+            }
+        });
+        UmengUpdateAgent.setDialogListener(new UmengDialogButtonListener() {
+
+            @Override
+            public void onClick(int status) {
+                switch (status) {
+                    case UpdateStatus.Update:
+                        break;
+                    case UpdateStatus.Ignore:
+                        enterNext();
+                        break;
+                    case UpdateStatus.NotNow:
+                        enterNext();
+                        break;
+                }
+            }
+        });
+
+        //  友盟自动更新
+        if (SharePreUtils.getsPreBoolean(this, "AutoUpdateFlag", true)) {
+            UmengUpdateAgent.update(this);
+        }
+        //静默下载更新
+        if (SharePreUtils.getsPreBoolean(this, "SilentUpdateFlag", false)) {
+            UIUtils.showToastSafe("静默下载更新");
+            UmengUpdateAgent.silentUpdate(this);
+        }
+
     }
 
     /**
@@ -226,53 +217,7 @@ public class SplashActivity extends AppCompatActivity {
         rl_spalash.startAnimation(set);
     }
 
-
-    /**
-     * 利用xUtils自带的方法,来实现下载App通用方法
-     */
-    public void downLoadApk() {
-        //获取下载的地址
-        String mDownLoadURL = parsesJsonDataUtils.getUpdateURL(this, ServiceURL.FirstJsonURL);
-        //文件保存在本地的路径
-        String target = Environment.getExternalStorageDirectory()
-                + "/hbkdzs.apk";
-        if (Environment.getExternalStorageState().equals(
-                Environment.MEDIA_MOUNTED)) {
-            XUtil.DownLoadFile(mDownLoadURL, target, new MyProgressCallBack<File>() {
-
-                        @Override
-                        public void onSuccess(File result) {
-                            UIUtils.showToastSafe("下载成功"+result.getAbsolutePath());
-                            // 跳转到系统的下载页面
-                            Intent intent = new Intent(Intent.ACTION_VIEW);
-                            intent.addCategory(Intent.CATEGORY_DEFAULT);
-                            intent.setDataAndType(Uri.fromFile(result),
-                                    "application/vnd.android.package-archive");
-                            startActivityForResult(intent, 0);// 跳转后的监听事件
-                        }
-
-                        @Override
-                        public void onError(Throwable ex, boolean isOnCallback) {
-                            UIUtils.showToastSafe("下载失败");
-                        }
-
-                        @Override
-                        public void onLoading(long total, long current, boolean isDownloading) {
-                            Message msg = handler.obtainMessage();
-                            msg.obj = "下载进度" + current * 100 / total + "%";
-                            handler.sendMessage(msg);
-                            System.out.println("下载进度" + current * 100 / total + "%");
-                        }
-                    }
-
-            );
-        } else {
-            Toast.makeText(SplashActivity.this, "Sdcard异常或者不存在",
-                    Toast.LENGTH_SHORT).show();
-        }
-
-    }
-
+    //如果不下载,也会跳转到主页面
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -293,5 +238,17 @@ public class SplashActivity extends AppCompatActivity {
                 break;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

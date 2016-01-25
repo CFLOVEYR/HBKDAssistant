@@ -52,7 +52,7 @@ public class SlideSwitch extends View {
 	private int diffX = 0;
 	private boolean slideable = true;
 	private SlideListener listener;
-
+	/**返回是否是确认状态*/
 	public boolean isChecked() {
 		return  isOpen;
 	}

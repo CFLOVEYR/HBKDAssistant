@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
+import com.umeng.analytics.MobclickAgent;
 
 public class GuideActivity extends AppCompatActivity {
     private ImageView imageView_pic;
@@ -36,6 +37,18 @@ public class GuideActivity extends AppCompatActivity {
         setView();
         initView();
         setListener();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     public void setView() {

@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.domain.FeedBack;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
+import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -141,5 +142,16 @@ public class ShowFeedBackActivity extends AppCompatActivity {
             TextView content;
             TextView time;
         }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

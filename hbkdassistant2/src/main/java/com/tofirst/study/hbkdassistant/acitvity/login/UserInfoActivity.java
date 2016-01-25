@@ -24,6 +24,7 @@ import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
 import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
 import com.tofirst.study.hbkdassistant.view.PullToZoomListView;
 import com.tofirst.study.hbkdassistant.view.SlideSwitch;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -247,6 +248,16 @@ public class UserInfoActivity extends AppCompatActivity {
         }
         return bitmap;
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
 
 }

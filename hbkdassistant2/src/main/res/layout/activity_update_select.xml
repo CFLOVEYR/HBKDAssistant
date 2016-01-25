@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:slideswitch="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tofirst.study.hbkdassistant.acitvity.main.UpdateSelectActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <LinearLayout style="@style/wrap_layout">
+        <!-- 上圆角-->
+        <!--自动更新-->
+        <LinearLayout
+            android:id="@+id/ll_auto_setting"
+            style="@style/top_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="自动更新" />
+
+            <com.tofirst.study.hbkdassistant.view.SlideSwitch
+                android:id="@+id/tb_autoupdate"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                slideswitch:isOpen="true"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="#ff73aa00" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+        <!-- 下圆角-->
+        <!--消息提醒-->
+        <LinearLayout
+            android:id="@+id/ll_message_setting"
+            style="@style/bottom_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="静默下载更新" />
+
+            <com.tofirst.study.hbkdassistant.view.SlideSwitch
+                android:id="@+id/tb_slideupdate"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                slideswitch:isOpen="false"
+                slideswitch:shape="circle"
+                slideswitch:themeColor="#ff73aa00" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
