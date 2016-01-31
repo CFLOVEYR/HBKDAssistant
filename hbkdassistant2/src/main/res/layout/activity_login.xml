@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/login_bg"
     android:orientation="vertical"
     tools:context=".acitvity.login.LoginActivity">
 
@@ -17,80 +16,116 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="账号: "
-            android:textColor="#000"
-            android:textSize="18sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
 
         <EditText
             android:id="@+id/et_user"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="请输入账号" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="请输入账号"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:paddingLeft="90dp"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="密码: "
-            android:textColor="#000"
-            android:textSize="18sp" />
+            android:layout_alignLeft="@id/et_user"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="账号: "
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
 
         <EditText
+            android:textColor="@color/black"
             android:id="@+id/et_psd"
-            android:inputType="textPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="请输入密码" />
-    </LinearLayout>
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="请填写密码"
+            android:paddingLeft="90dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_psd"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="getCode"
+            android:text="密码"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_enable_green"
+        android:enabled="true"
+        android:onClick="login"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
+        <TextView
+            android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/btn_image_selector"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="注册"
             android:onClick="register"
-            android:text="注册" />
+            android:textColor="#576B95"
+            android:textSize="14sp" />
 
-        <Button
+        <TextView
+            android:id="@+id/tv_wenti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/btn_image_selector"
-            android:onClick="login"
-            android:text="登录" />
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="忘记密码?"
+            android:onClick="pickup"
+            android:textColor="#576B95"
+            android:textSize="14sp" />
     </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/btn_image_selector"
-        android:onClick="pickup"
-        android:text="找回密码" />
+
+
 </LinearLayout>

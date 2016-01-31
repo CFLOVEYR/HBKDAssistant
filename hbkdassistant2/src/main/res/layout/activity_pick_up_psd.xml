@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.beyondself.jalen.studyingandroid.activity.login.PickUpPSDActivity">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -14,109 +15,148 @@
         android:fitsSystemWindows="true"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="手机号码:"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
 
         <EditText
             android:id="@+id/et_pickup_pnumber"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="请输入手机号码"
+            android:maxLength="11"
+            android:paddingLeft="90dp"
+            android:singleLine="true"
             android:textColor="@color/black"
-            android:hint="请输入手机号码" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="验证码:"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:layout_alignLeft="@id/et_pickup_pnumber"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="手机号码: "
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <!--验证码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
 
         <EditText
             android:id="@+id/et_pickup_code"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="请输入验证码"
+            android:paddingLeft="90dp"
+            android:password="true"
+            android:singleLine="true"
             android:textColor="@color/black"
-            android:hint="请输入验证码" />
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_password"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:background="#fff"
-            android:textColor="@color/black"
+            android:layout_alignLeft="@id/et_pickup_code"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:clickable="true"
             android:onClick="getCode"
-            android:text="获取验证码" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:text="获取验证码"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="新密码:"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+    <!--新密码-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
 
         <EditText
             android:id="@+id/et_pickup_newpsd"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="请输入新密码"
+            android:maxLength="11"
+            android:paddingLeft="90dp"
+            android:singleLine="true"
+            android:inputType="numberPassword"
             android:textColor="@color/black"
-            android:inputType="textPassword"
-            android:hint="请输入密码" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="确认密码:"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:layout_alignLeft="@id/et_pickup_newpsd"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="新密码: "
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <!--确认新密码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
 
         <EditText
-            android:textColor="@color/black"
             android:id="@+id/et_pickup_newpsd_confirm"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPassword"
-            android:hint="请再次输入密码" />
-    </LinearLayout>
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_login"
+            android:hint="请再次输入新密码"
+            android:maxLength="11"
+            android:paddingLeft="90dp"
+            android:inputType="numberPassword"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_pickup_newpsd_confirm"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="确认新密码: "
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
 
     <Button
-        android:background="@drawable/btn_image_selector"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_enable_green"
+        android:enabled="true"
         android:onClick="save_phone_pickup"
-        android:text="确认信息" />
+        android:text="修改密码"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
 </LinearLayout>

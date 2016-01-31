@@ -149,11 +149,14 @@
 
             <Button
                 android:id="@+id/bt_setting_sign_out"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_enable_green"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/btn_image_sign_selector"
                 android:gravity="center"
                 android:text="注销登录"
                 android:textColor="#000"

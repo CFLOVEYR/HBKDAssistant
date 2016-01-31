@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.tofirst.study.hbkdassistant.R;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
+import com.tofirst.study.hbkdassistant.utils.common.ToastUtils;
 import com.umeng.analytics.MobclickAgent;
 
 import cn.bmob.v3.BmobSMS;
@@ -77,7 +78,7 @@ public class PickUpPSDActivity extends AppCompatActivity {
     public void save_phone_pickup(View view) {
         String number = et_pickup_pnumber.getText().toString();
         String code = et_pickup_code.getText().toString();
-        String newpsd = et_pickup_newpsd.getText().toString();
+        final String newpsd = et_pickup_newpsd.getText().toString();
         String newpsd_confirm = et_pickup_newpsd_confirm.getText().toString();
         if (TextUtils.isEmpty(number) || TextUtils.isEmpty(newpsd) ||
                 TextUtils.isEmpty(code) || TextUtils.isEmpty(newpsd_confirm)) {
@@ -92,6 +93,7 @@ public class PickUpPSDActivity extends AppCompatActivity {
                 public void done(BmobException ex) {
                     if (ex == null) {
                         Log.i("smile", "密码重置成功");
+                        ToastUtils.showToast(PickUpPSDActivity.this,"密码重置成功"+newpsd);
                         //跳转到登录界面
                         startActivity(new Intent(PickUpPSDActivity.this, LoginActivity.class));
                         finish();
