@@ -104,10 +104,8 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-
-                initSDK();
-
-
+//                initSDK();//上线不用自己写自动更新了
+                enterNext();
             }
 
             @Override

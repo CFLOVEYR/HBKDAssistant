@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
@@ -27,7 +26,6 @@ import com.tofirst.study.hbkdassistant.db.NewsCacheDbHelper;
 import com.tofirst.study.hbkdassistant.fragment.main.ContentFragment;
 import com.tofirst.study.hbkdassistant.fragment.zhnews.MenuFragment;
 import com.tofirst.study.hbkdassistant.utils.common.SharePreUtils;
-import com.tofirst.study.hbkdassistant.utils.common.UIUtils;
 
 public class MainActivity extends BaseActivity {
     private static final String CONTENFRAGMENT = "contenfragment";
@@ -35,7 +33,6 @@ public class MainActivity extends BaseActivity {
     private FrameLayout fl_content;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
-    private SwipeRefreshLayout sr;
     private long firstTime;
     private Toolbar toolbar;
     private boolean isLight;
@@ -60,8 +57,8 @@ public class MainActivity extends BaseActivity {
     }
 
     public void loadLatest() {
-        initFragment();
         curId = "latest";
+        initFragment();
     }
 
     public void setCurId(String id) {
@@ -78,23 +75,6 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    /**
-     * 设置状态栏的主题
-     */
-    @TargetApi(21)
-    private void setStatusBarColor(int statusBarColor) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            // If both system bars are black, we can remove these from our layout,
-            // removing or shrinking the SurfaceFlinger overlay required for our views.
-            Window window = this.getWindow();
-            if (statusBarColor == Color.BLACK && window.getNavigationBarColor() == Color.BLACK) {
-                window.clearFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            } else {
-                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            }
-            window.setStatusBarColor(statusBarColor);
-        }
-    }
 
     /**
      * 初始化组件
@@ -102,25 +82,7 @@ public class MainActivity extends BaseActivity {
     private void initViews() {
         fl_content = (FrameLayout) findViewById(R.id.fl_content);
         initActionBar();
-        initPurefResh();
         loadLatest();//最新,捎带初始化Fragment
-    }
-
-
-    private void initPurefResh() {
-        sr = (SwipeRefreshLayout) findViewById(R.id.sr);
-        sr.setColorSchemeResources(android.R.color.holo_blue_bright,
-                android.R.color.holo_green_light,
-                android.R.color.holo_orange_light,
-                android.R.color.holo_red_light);
-
-        sr.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                UIUtils.showToastSafe("刷新了");
-                sr.setRefreshing(false);
-            }
-        });
     }
 
 
@@ -180,12 +142,6 @@ public class MainActivity extends BaseActivity {
 
     }
 
-    /**
-     * 设置是否能下拉刷新的方法
-     */
-    public void setSwipeRefreshEnable(boolean enable) {
-        sr.setEnabled(enable);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -275,6 +231,23 @@ public class MainActivity extends BaseActivity {
 
     }
 
+    /**
+     * 设置状态栏的主题
+     */
+    @TargetApi(21)
+    private void setStatusBarColor(int statusBarColor) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            // If both system bars are black, we can remove these from our layout,
+            // removing or shrinking the SurfaceFlinger overlay required for our views.
+            Window window = this.getWindow();
+            if (statusBarColor == Color.BLACK && window.getNavigationBarColor() == Color.BLACK) {
+                window.clearFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            } else {
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            }
+            window.setStatusBarColor(statusBarColor);
+        }
+    }
     public boolean isLight() {
         return isLight;
     }

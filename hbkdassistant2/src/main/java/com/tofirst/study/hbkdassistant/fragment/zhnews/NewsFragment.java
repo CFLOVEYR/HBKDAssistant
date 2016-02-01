@@ -107,7 +107,8 @@ public class NewsFragment extends BaseFragment {
                                  int visibleItemCount, int totalItemCount) {
                 if (lv_news != null && lv_news.getChildCount() > 0) {
                     boolean enable = (firstVisibleItem == 0) && (view.getChildAt(firstVisibleItem).getTop() == 0);
-                    ((MainActivity) mActivity).setSwipeRefreshEnable(enable);
+//                    设置不能下拉刷新
+//                    ((MainActivity) mActivity).setSwipeRefreshEnable(enable);
                 }
             }
         });

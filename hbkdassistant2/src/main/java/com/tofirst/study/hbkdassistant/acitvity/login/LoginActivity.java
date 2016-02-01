@@ -38,6 +38,13 @@ public class LoginActivity extends AppCompatActivity {
         //设置返回键可用
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+
+            }
+        });
     }
     /**
      * 注册的方法
@@ -96,7 +103,6 @@ public class LoginActivity extends AppCompatActivity {
      */
     private void enterRegisterPager() {
         startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
-        finish();
     }
 
     /**
@@ -104,7 +110,6 @@ public class LoginActivity extends AppCompatActivity {
      */
     private void enterPickUpPager() {
         startActivity(new Intent(LoginActivity.this, PickUpPSDActivity.class));
-        finish();
     }
     @Override
     protected void onResume() {

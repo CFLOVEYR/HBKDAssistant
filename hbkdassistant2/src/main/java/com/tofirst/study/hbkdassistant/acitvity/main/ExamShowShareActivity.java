@@ -3,6 +3,7 @@ package com.tofirst.study.hbkdassistant.acitvity.main;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.EditText;
 
 import com.tofirst.study.hbkdassistant.R;
@@ -53,5 +54,12 @@ public class ExamShowShareActivity extends BaseActivity {
         //设置返回键可用
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+
+            }
+        });
     }
 }

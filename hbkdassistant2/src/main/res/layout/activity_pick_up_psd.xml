@@ -34,7 +34,7 @@
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="#DDDDDD"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="90dp"
@@ -44,9 +44,10 @@
             android:layout_marginLeft="14dp"
             android:text="手机号码: "
             android:textColor="#353535"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
     </RelativeLayout>
-    <!--验证码-->
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -56,32 +57,43 @@
             android:id="@+id/et_pickup_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
+            android:layout_weight="1"
             android:background="@drawable/edittext_login"
-            android:hint="请输入验证码"
+            android:hint="输入验证码"
+            android:inputType="number"
             android:paddingLeft="90dp"
-            android:password="true"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="#DDDDDD"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/tv_password"
-            android:layout_width="90dp"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/et_pickup_code"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="验证码: "
+            android:textColor="#353535"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_getSmsCode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/et_pickup_code"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:clickable="true"
             android:onClick="getCode"
             android:text="获取验证码"
             android:textColor="#353535"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
+
     </RelativeLayout>
 
     <!--新密码-->
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -94,13 +106,13 @@
             android:layout_centerVertical="true"
             android:background="@drawable/edittext_login"
             android:hint="请输入新密码"
+            android:inputType="numberPassword"
             android:maxLength="11"
             android:paddingLeft="90dp"
             android:singleLine="true"
-            android:inputType="numberPassword"
             android:textColor="@color/black"
             android:textColorHint="#DDDDDD"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="90dp"
@@ -110,7 +122,7 @@
             android:layout_marginLeft="14dp"
             android:text="新密码: "
             android:textColor="#353535"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
     </RelativeLayout>
 
 
@@ -127,13 +139,13 @@
             android:layout_centerVertical="true"
             android:background="@drawable/edittext_login"
             android:hint="请再次输入新密码"
+            android:inputType="numberPassword"
             android:maxLength="11"
             android:paddingLeft="90dp"
-            android:inputType="numberPassword"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHint="#DDDDDD"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="90dp"
@@ -143,7 +155,7 @@
             android:layout_marginLeft="14dp"
             android:text="确认新密码: "
             android:textColor="#353535"
-            android:textSize="16sp" />
+            android:textSize="15sp" />
     </RelativeLayout>
 
     <Button

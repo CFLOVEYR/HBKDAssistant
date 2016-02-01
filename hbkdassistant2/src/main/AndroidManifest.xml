@@ -49,49 +49,31 @@
         <activity android:name=".acitvity.main.MainActivity" />
         <!-- 展示网页的数据 -->
         <!-- 登录的界面 -->
-        <activity
-            android:name=".acitvity.login.LoginActivity"
-            android:parentActivityName=".acitvity.main.MainActivity" />
+        <activity android:name=".acitvity.login.LoginActivity" />
         <!-- 注册的页面 -->
-        <activity
-            android:name=".acitvity.login.RegisterActivity"
-            android:parentActivityName=".acitvity.login.LoginActivity" />
+        <activity android:name=".acitvity.login.RegisterActivity" />
 
         <!-- Activity的基类 -->
         <activity android:name=".acitvity.main.BaseActivity" />
         <!-- 设置页面 -->
-        <activity
-            android:name=".acitvity.main.SettingActivity"
-            android:parentActivityName=".acitvity.main.MainActivity" />
+        <activity android:name=".acitvity.main.SettingActivity" />
         <!-- 考试资料分享的界面 -->
         <activity
             android:name=".acitvity.main.ExamShareActivity"
-            android:parentActivityName=".acitvity.main.MainActivity"
+
             android:theme="@style/Theme.PageIndicatorDefaults.MyStyle" />
         <!-- 用户信息的类 -->
-        <activity
-            android:name=".acitvity.login.UserInfoActivity"
-            android:parentActivityName=".acitvity.main.MainActivity" />
+        <activity android:name=".acitvity.login.UserInfoActivity" />
         <!-- 找回密码的类 -->
-        <activity
-            android:name=".acitvity.login.PickUpPSDActivity"
-            android:parentActivityName=".acitvity.login.LoginActivity" />
+        <activity android:name=".acitvity.login.PickUpPSDActivity" />
         <!-- 更改用户信息的类 -->
-        <activity
-            android:name=".acitvity.login.UpdateUserInfoActivity"
-            android:parentActivityName=".acitvity.login.UserInfoActivity" />
+        <activity android:name=".acitvity.login.UpdateUserInfoActivity" />
         <!-- 反馈信息 -->
-        <activity
-            android:name=".acitvity.feedback.FeedActivity"
-            android:parentActivityName=".acitvity.main.MainActivity" />
+        <activity android:name=".acitvity.feedback.FeedActivity" />
         <!-- 展示反馈信息 -->
-        <activity
-            android:name=".acitvity.feedback.ShowFeedBackActivity"
-            android:parentActivityName=".acitvity.feedback.FeedActivity" />
+        <activity android:name=".acitvity.feedback.ShowFeedBackActivity" />
         <!-- 详细展示反馈信息 -->
-        <activity
-            android:name=".acitvity.feedback.ShowFeedBackDetailActivity"
-            android:parentActivityName=".acitvity.feedback.ShowFeedBackActivity" />
+        <activity android:name=".acitvity.feedback.ShowFeedBackDetailActivity" />
         <!-- 自动更新的对话界面 -->
         <activity
             android:name="cn.bmob.v3.update.UpdateDialogActivity"
@@ -106,13 +88,9 @@
             android:name=".acitvity.main.NewsContentActivity"
             android:theme="@style/AppTheme.TransparentActivity" />
         <!-- 详细展示分享经验的页面 -->
-        <activity
-            android:name=".acitvity.main.ExamShowDetailActivity"
-            android:parentActivityName=".acitvity.main.ExamShareActivity" />
+        <activity android:name=".acitvity.main.ExamShowDetailActivity" />
         <!-- 详细展示经验需求的页面 -->
-        <activity
-            android:name=".acitvity.main.ExamShowShareActivity"
-            android:parentActivityName=".acitvity.main.ExamShareActivity" />
+        <activity android:name=".acitvity.main.ExamShowShareActivity" />
         <!-- 友盟版本更新 -->
         <service
             android:name="com.umeng.update.net.DownloadingService"
@@ -122,9 +100,7 @@
             android:name="com.umeng.update.UpdateDialogActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <!--设置自动更新的界面-->
-        <activity
-            android:name=".acitvity.main.UpdateSelectActivity"
-            android:parentActivityName=".acitvity.main.SettingActivity"></activity>
+        <activity android:name=".acitvity.main.UpdateSelectActivity"></activity>
     </application>
 
 </manifest>

@@ -73,7 +73,7 @@ public class MainDetailPager extends BaseLeftMenuPaper {
                 if (lv_news != null && lv_news.getChildCount() > 0) {
                     boolean enable = (firstVisibleItem == 0) && (view.getChildAt(firstVisibleItem).getTop() == 0);
                     //如果第一行可见,而且第一个为0,设置为true,可以下拉刷新,否则不能下拉刷新,防止下拉的时候出现下拉刷新
-                    ((MainActivity) mActivity).setSwipeRefreshEnable(enable);
+
                     //加载更多的判断-->>如果 可见条目+第一个可见的条目==总共的条目,而且不在下载中,就加载更多
                     if (firstVisibleItem + visibleItemCount == totalItemCount && !isLoading) {
 //                        UIUtils.showToastSafe("加载更多...");
